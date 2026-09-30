@@ -1,0 +1,128 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg-neu: #FAF6EE;
+  --shadow-light: #ffffff;
+  --shadow-dark: #dfd6c4;
+}
+
+body {
+  margin: 0;
+  font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  background-color: #FAF6EE;
+  color: #1E293B;
+  overflow-x: hidden;
+}
+
+/* Serif Display for reference title */
+.font-display {
+  font-family: 'Playfair Display', Georgia, serif;
+}
+
+/* Neumorphic Soft UI Design Tokens */
+.neu-card {
+  background: #FAF6EE;
+  border-radius: 1.5rem;
+  box-shadow: 10px 10px 24px #dfd6c4, -10px -10px 24px #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  transition: all 0.25s ease;
+}
+
+.neu-card:hover {
+  box-shadow: 12px 12px 28px #d6cca6, -12px -12px 28px #ffffff;
+}
+
+.neu-card-sm {
+  background: #FAF6EE;
+  border-radius: 1rem;
+  box-shadow: 6px 6px 14px #dfd6c4, -6px -6px 14px #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  transition: all 0.2s ease;
+}
+
+.neu-btn {
+  background: #FAF6EE;
+  box-shadow: 5px 5px 12px #dfd6c4, -5px -5px 12px #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  transition: all 0.2s ease;
+}
+
+.neu-btn:hover {
+  box-shadow: 7px 7px 16px #d6cca6, -7px -7px 16px #ffffff;
+}
+
+.neu-btn:active, .neu-btn-pressed {
+  background: #FAF6EE;
+  box-shadow: inset 4px 4px 8px #dfd6c4, inset -4px -4px 8px #ffffff !important;
+}
+
+.neu-inset {
+  background: #F5EFE4;
+  box-shadow: inset 4px 4px 8px #ded5c3, inset -4px -4px 8px #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.neu-orange-btn {
+  background: linear-gradient(135deg, #FF7A00 0%, #EA580C 100%);
+  color: #ffffff;
+  box-shadow: 0 10px 22px -3px rgba(234, 88, 12, 0.4), 4px 4px 10px #ded5c3;
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  transition: all 0.25s ease;
+}
+
+.neu-orange-btn:hover {
+  background: linear-gradient(135deg, #FF881A 0%, #F97316 100%);
+  box-shadow: 0 12px 26px -3px rgba(234, 88, 12, 0.5), 6px 6px 14px #ded5c3;
+  transform: translateY(-1px);
+}
+
+.neu-orange-btn:active {
+  transform: translateY(1px);
+  box-shadow: 0 4px 12px -2px rgba(234, 88, 12, 0.4);
+}
+
+.neu-danger {
+  border: 1.5px solid #F43F5E !important;
+  box-shadow: 8px 8px 24px rgba(244, 63, 94, 0.25), -8px -8px 24px #ffffff !important;
+}
+
+.neu-safe {
+  border: 1.5px solid #10B981 !important;
+  box-shadow: 8px 8px 24px rgba(16, 185, 129, 0.2), -8px -8px 24px #ffffff !important;
+}
+
+/* Custom Neumorphic Scrollbars */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #F3ECE0;
+}
+::-webkit-scrollbar-thumb {
+  background: #D9CEB9;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #C4B79E;
+}
+
+/* Neumorphic Traffic Pillar Indicator (Matches reference image) */
+.neu-pillar {
+  background: #2E384D;
+  border-radius: 9999px;
+  box-shadow: 4px 4px 10px #d6cca6, -4px -4px 10px #ffffff;
+}
+
+/* Animated warm ambient blobs */
+.ambient-glow-orange {
+  position: absolute;
+  width: 320px;
+  height: 320px;
+  background: radial-gradient(circle, rgba(249, 115, 22, 0.15) 0%, rgba(249, 115, 22, 0) 70%);
+  border-radius: 50%;
+  pointer-events: none;
+  filter: blur(40px);
+}
